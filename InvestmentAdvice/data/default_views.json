@@ -1,0 +1,115 @@
+{
+  "schemaVersion": 1,
+  "assets": [
+    {
+      "id": "gold",
+      "name": "Gold",
+      "ticker": "XAUUSD",
+      "updatedAt": "2026-02-07T00:00:00Z",
+      "stance": "Leaning bullish as real yields cool and central bank demand persists.",
+      "direction": "Bullish",
+      "confidence": 64,
+      "horizon": "3M",
+      "keyLevels": {
+        "support": [
+          { "label": "S1", "value": 1980 },
+          { "label": "S2", "value": 1930 }
+        ],
+        "resistance": [
+          { "label": "R1", "value": 2065 },
+          { "label": "R2", "value": 2140 }
+        ]
+      },
+      "narrativeMarkdown": "Gold remains supported by easing real rates, a softer US dollar bias, and risk-off demand. Central bank buying stays a steady tailwind even as flows ebb and fade.",
+      "priceOutlook": {
+        "baseCase": "Range trade between **1980** and **2100** as real yields grind lower.",
+        "bullCase": "Break above **2100** if real yields fall and risk sentiment turns defensive.",
+        "bearCase": "Retest **1850** if real yields rise and USD strength returns."
+      },
+      "catalysts": [
+        "US real yields drift lower",
+        "Central bank purchases remain steady",
+        "Geopolitical risk premium"
+      ],
+      "risks": [
+        "Real yields re-accelerate",
+        "Short squeeze in the USD"
+      ],
+      "tags": ["macro", "rates", "risk-off"],
+      "chart": {
+        "seriesName": "Price",
+        "unit": "USD",
+        "points": [
+          { "time": "2025-10-01", "value": 1925.2 },
+          { "time": "2025-11-01", "value": 1948.6 },
+          { "time": "2025-12-01", "value": 1992.4 },
+          { "time": "2026-01-01", "value": 2018.3 },
+          { "time": "2026-02-01", "value": 2036.9 }
+        ]
+      },
+      "revisions": [
+        {
+          "updatedAt": "2026-02-01T00:00:00Z",
+          "direction": "Neutral",
+          "stance": "Range bound while yields stay elevated.",
+          "narrativeMarkdown": "Gold was stuck in a tight band as real yields stayed firm."
+        }
+      ]
+    },
+    {
+      "id": "usd",
+      "name": "US Dollar",
+      "ticker": "DXY",
+      "updatedAt": "2026-02-07T00:00:00Z",
+      "stance": "Neutral with upside risk if rate differentials widen.",
+      "direction": "Neutral",
+      "confidence": 52,
+      "horizon": "1M",
+      "keyLevels": {
+        "support": [
+          { "label": "S1", "value": 102.5 },
+          { "label": "S2", "value": 101.0 }
+        ],
+        "resistance": [
+          { "label": "R1", "value": 105.2 },
+          { "label": "R2", "value": 106.5 }
+        ]
+      },
+      "narrativeMarkdown": "The dollar is balanced between firm rate differentials and mixed global growth. Risk sentiment swings still drive short-term moves, while relative US growth remains the swing factor.",
+      "priceOutlook": {
+        "baseCase": "Range between **102** and **105** as policy paths stay data dependent.",
+        "bullCase": "Push toward **107** if US growth surprises higher and risk appetite fades.",
+        "bearCase": "Slide toward **100** if growth cools and global risk mood improves."
+      },
+      "catalysts": [
+        "Rate differentials versus peers",
+        "US growth surprises",
+        "Risk sentiment swings"
+      ],
+      "risks": [
+        "Growth deceleration",
+        "Fiscal risk headlines"
+      ],
+      "tags": ["fx", "rates", "macro"],
+      "chart": {
+        "seriesName": "Index",
+        "unit": "DXY",
+        "points": [
+          { "time": "2025-10-01", "value": 103.2 },
+          { "time": "2025-11-01", "value": 104.1 },
+          { "time": "2025-12-01", "value": 103.4 },
+          { "time": "2026-01-01", "value": 104.8 },
+          { "time": "2026-02-01", "value": 104.0 }
+        ]
+      },
+      "revisions": [
+        {
+          "updatedAt": "2026-02-01T00:00:00Z",
+          "direction": "Bearish",
+          "stance": "Downside bias as growth gaps narrow.",
+          "narrativeMarkdown": "The dollar softened as growth differentials narrowed."
+        }
+      ]
+    }
+  ]
+}

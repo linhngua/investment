@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Financial Asset Views</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600&family=Newsreader:wght@500;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="assets/styles.css" />
+  </head>
+  <body>
+    <div class="page">
+      <header class="hero">
+        <h1>Financial Asset Views</h1>
+        <p>
+          Curated market perspectives with narrative, outlook, and key levels. Data is stored
+          locally and charts are rendered from bundled time series.
+        </p>
+        <div class="top-actions">
+          <a class="button" href="admin.html">Open Admin Editor</a>
+          <span id="status" class="notice"></span>
+        </div>
+      </header>
+
+      <main>
+        <div id="assets" class="grid"></div>
+      </main>
+
+      <footer class="footer">
+        Built as a static site for fast deployment on Cloudflare Pages.
+      </footer>
+    </div>
+
+    <script src="https://unpkg.com/lightweight-charts/dist/lightweight-charts.standalone.production.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+    <script type="module" src="assets/app.js"></script>
+  </body>
+</html>
