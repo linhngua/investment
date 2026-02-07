@@ -7,7 +7,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600&family=Newsreader:wght@500;700&display=swap"
+      href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500&family=Space+Grotesk:wght@400;500;600&display=swap"
       rel="stylesheet"
     />
     <link rel="stylesheet" href="assets/styles.css" />
@@ -15,10 +15,10 @@
   <body>
     <div class="page">
       <header class="hero">
-        <h1>Asset View Admin</h1>
-        <p>
-          Edit your asset views and save them to localStorage. Export or import JSON for backup.
-        </p>
+        <div>
+          <h1>Asset View Admin</h1>
+          <p>Edit price targets, narrative, and upload charts to R2.</p>
+        </div>
         <div class="top-actions">
           <button id="save" class="button">Save</button>
           <button id="export" class="button secondary">Export JSON</button>
@@ -35,7 +35,7 @@
       </main>
 
       <footer class="footer">
-        Tip: Run a local server (python -m http.server) to avoid browser file restrictions.
+        Local upload fallback stores charts only in localStorage.
       </footer>
     </div>
 
